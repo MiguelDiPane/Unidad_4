@@ -71,7 +71,7 @@ class Aplicacion():
     def calcular(self):
         try:
             #Calculo IMC
-            altura = float(self.alturaEntry.get())
+            altura = float(self.alturaEntry.get()) / 100
             peso = float(self.pesoEntry.get())
             imc = peso / altura**2
             imc = round(imc,2)
