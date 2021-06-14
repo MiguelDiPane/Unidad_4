@@ -4,7 +4,7 @@ from claseControladorProvincias import ControladorProvincias
 from claseObjectEncoder import ObjectEncoder
 
 def main():
-    conn=ObjectEncoder('provincias.json')
+    conn=ObjectEncoder('datos.json')
     repo=RespositorioProvincias(conn)
     vista=ProvinciasView()
     ctrl=ControladorProvincias(repo, vista)

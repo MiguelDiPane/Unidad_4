@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import Scrollbar, messagebox
 from tkinter.constants import N, S, W
 from claseProvincia import Provincia
+from claseClima import Clima
 
 class ProvinciaList(tk.Frame):
     def __init__(self,master,**kwargs):
@@ -18,15 +19,15 @@ class ProvinciaList(tk.Frame):
         self.lb.insert(index,text)
     
     def borrar(self,index):
-        self.lb.delete(index,index) #porque dos index?
+        self.lb.delete(index,index) 
     
     def modificar(self,provincia,index):
         self.borrar(index)
         self.insertar(provincia,index)
     
     def bind_doble_click(self,callback):
-        handler = lambda _: callback(self.lb.curselection()[0]) #que hace esto?
-        self.lb.bind("<Double-Button-1>",handler) #que hace?
+        handler = lambda _: callback(self.lb.curselection()[0]) 
+        self.lb.bind("<Double-Button-1>",handler) 
 
 class ProvinciaForm(tk.LabelFrame):
     _fields = ("Nombre", "Capital", "Cantidad de habitantes",
@@ -96,7 +97,18 @@ class UpdateProvinciaForm(ProvinciaForm):
     def __init__(self, master, **kwargs):
         #Pongo los campos propios de el formulario de la pantalla principal
         self._fields = ("Nombre", "Capital", "Cantidad de habitantes","Cantidad de departamentos/partidos","Temperatura", "Sensación térmica", "Humedad")
-        super().__init__(master, **kwargs)       
+        super().__init__(master, **kwargs)
+
+    # a partir de una provincia, obtiene el estado y establece en los valores en el formulario de entrada
+    def mostrarEstadoProvinciaEnFormulario(self, provincia):
+        miClima = Clima()
+        miClima.conectar(provincia.getNombre(),provincia.getCapital())
+        values = (provincia.getNombre(), provincia.getCapital(),
+                provincia.getCantHabitantes(), provincia.getCantDepartamentos(),miClima.getTemperatura(),miClima.getTermica(),miClima.getHumedad())
+
+        for entry, value in zip(self.entries, values):
+            entry.delete(0, tk.END)
+            entry.insert(0, value)   
 
 class ProvinciasView(tk.Tk):
     def __init__(self):
