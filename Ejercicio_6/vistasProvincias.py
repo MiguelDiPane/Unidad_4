@@ -42,7 +42,7 @@ class ProvinciaForm(tk.LabelFrame):
     def crearCampo(self, field):
         position, text = field
         label = tk.Label(self.frame, text=text)
-        entry = tk.Entry(self.frame, width=25)
+        entry = tk.Entry(self.frame, width=40)
         label.grid(row=position, column=0, pady=(10,5), sticky=W)
         entry.grid(row=position, column=1, pady=5, sticky=W)
         return entry
