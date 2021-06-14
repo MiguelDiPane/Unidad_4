@@ -1,0 +1,212 @@
+[
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Julia",
+            "apellido": "Herrero",
+            "telefono": "4212825",
+            "altura": "162",
+            "peso": "60"
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Santana",
+            "apellido": "Patricia",
+            "telefono": 4218667,
+            "altura": 185,
+            "peso": 40
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Lorenzo",
+            "apellido": "Irene",
+            "telefono": 4236675,
+            "altura": 185,
+            "peso": 51
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Hidalgo",
+            "apellido": "M\u00f3nica",
+            "telefono": 4274255,
+            "altura": 174,
+            "peso": 79
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Montero",
+            "apellido": "Andrea",
+            "telefono": 4258164,
+            "altura": 181,
+            "peso": 42
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Ib\u00e1\u00f1ez",
+            "apellido": "Rocio",
+            "telefono": 4245598,
+            "altura": 161,
+            "peso": 52
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Gim\u00e9nez",
+            "apellido": "Angela",
+            "telefono": 4289020,
+            "altura": 189,
+            "peso": 82
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Ferrer",
+            "apellido": "Susana",
+            "telefono": 4231523,
+            "altura": 153,
+            "peso": 89
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Pedro",
+            "apellido": "Reyes",
+            "telefono": 4269228,
+            "altura": 164,
+            "peso": 87
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Alejandro",
+            "apellido": "Aguilar",
+            "telefono": 4208096,
+            "altura": 151,
+            "peso": 88
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Angel",
+            "apellido": "Pascual",
+            "telefono": 4233756,
+            "altura": 168,
+            "peso": 42
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Jose Maria",
+            "apellido": "Santana",
+            "telefono": 4286929,
+            "altura": 159,
+            "peso": 72
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Lorenzo",
+            "apellido": "Fernando",
+            "telefono": "4295950",
+            "altura": "180",
+            "peso": "69"
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Luis",
+            "apellido": "Hidalgo",
+            "telefono": 4299976,
+            "altura": 182,
+            "peso": 49
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Pablo",
+            "apellido": "Montero",
+            "telefono": 4292410,
+            "altura": 150,
+            "peso": 86
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Sergio",
+            "apellido": "Iba\u00f1ez",
+            "telefono": 4256334,
+            "altura": 176,
+            "peso": 79
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Jorge",
+            "apellido": "Gimenez",
+            "telefono": 4291584,
+            "altura": 170,
+            "peso": 95
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Alberto",
+            "apellido": "Ferrer",
+            "telefono": 4287144,
+            "altura": 182,
+            "peso": 92
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Duran",
+            "apellido": "Juan Carlos",
+            "telefono": "4230908",
+            "altura": "162",
+            "peso": "80"
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Ramon",
+            "apellido": "Benitez",
+            "telefono": 4284850,
+            "altura": 159,
+            "peso": 54
+        }
+    },
+    {
+        "__class__": "Paciente",
+        "__atributos__": {
+            "nombre": "Enrique",
+            "apellido": "Mora",
+            "telefono": 4234156,
+            "altura": 182,
+            "peso": 53
+        }
+    }
+]

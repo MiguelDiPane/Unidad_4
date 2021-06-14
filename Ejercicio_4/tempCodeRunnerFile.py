@@ -1,0 +1,1 @@
+self.__panel.get()
