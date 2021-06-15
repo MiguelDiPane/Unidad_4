@@ -72,37 +72,47 @@ class Calculadora(object):
             else:
                 self.__primerOperando=int(valor)
             self.__panel.set(numero)
+    
     def borrarPanel(self):
         self.__panel.set('')
         self.__operador.set('')
-    def resolverOperacion(self, operando1, operacion, operando2):
-        resultado=0
-        if operacion=='+':
-            resultado=operando1+operando2
-        else:
-            if operacion=='-':
-                resultado=operando1-operando2
-            else:
-                if operacion=='*':
-                    resultado=operando1*operando2
-                else:
-                    if operacion=='%':
-                        resultado=operando1/operando2
-                    else:
-                        resultado = Fraccion(operando1,operando2)
-                        resultado.simplificar()
 
-        self.__panel.set(str(resultado))
+    def resolverOperacion(self, operando1, operacion, operando2):
+        if operacion != '':
+            resultado = 0
+            if operacion=='+':
+                resultado=operando1+operando2
+            else:
+                if operacion=='-':
+                    resultado=operando1-operando2
+                else:
+                    if operacion=='*':
+                        resultado=operando1*operando2
+                    else:
+                        if operacion=='%':
+                            resultado=operando1/operando2
+
+            if isinstance(resultado,Fraccion):
+                resultado.simplificar()
+
+            self.__panel.set(str(resultado))
     def ponerOPERADOR(self, op):
         if op=='=':
             operacion=self.__operador.get()
             self.__segundoOperando=self.__panel.get()
             pos = self.__segundoOperando.find('/') 
             if pos != -1:
-                num = int(self.__segundoOperando[0:pos])
-                den = int(self.__segundoOperando[pos+1:])
-                self.__segundoOperando= Fraccion(num,den)
-                self.__segundoOperando.simplificar()
+                if operacion != '':
+                    num = int(self.__segundoOperando[0:pos])
+                    den = int(self.__segundoOperando[pos+1:])
+                    self.__segundoOperando= Fraccion(num,den)
+                    self.__segundoOperando.simplificar()
+                else:
+                    num = int(self.__segundoOperando[0:pos])
+                    den = int(self.__segundoOperando[pos+1:])
+                    self.__segundoOperando= Fraccion(num,den)
+                    self.__segundoOperando.simplificar()
+                    self.__panel.set(str(self.__segundoOperando))
             else:
                 self.__segundoOperando=int(self.__panel.get())              
             self.resolverOperacion(self.__primerOperando, operacion, self.__segundoOperando)
